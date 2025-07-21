@@ -16,6 +16,7 @@ import OrganizationsSection from './Sections/OrganizationsSection';
 import RangkaianAcaraSection from './Sections/RangkaianAcaraSection'
 import GrandSummitSection from './Sections/GrandSummitSection'
 import OurEvents from './Sections/OurEvents'
+import ScrollEffect from './Components/ScrollEffect'
 
 
 
@@ -25,6 +26,8 @@ function App() {
 
   return (
     <Guest>
+      {/* Scroll Effect */}
+      <ScrollEffect />
 
       <VideoBackground />
 
