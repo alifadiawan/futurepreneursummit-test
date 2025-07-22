@@ -8,12 +8,18 @@ const ImageBackground = () => {
         <section
             className="hero-section relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
         >
+            {/* Preload for LCP optimization */}
+            <img src={bgImage} alt="" style={{ display: 'none' }} loading="eager" />
+
             <motion.div
                 initial={{ scale: 1.1, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
-                className="absolute inset-0 bg-cover bg-center z-0"
-                style={{ backgroundImage: `url(${bgImage})` }}
+                className="absolute inset-0 w-full h-full bg-cover bg-center z-0"
+                style={{
+                    backgroundImage: `url(${bgImage})`,
+                    willChange: 'transform, opacity',
+                }}
             >
                 <motion.div
                     initial={{ opacity: 0 }}
