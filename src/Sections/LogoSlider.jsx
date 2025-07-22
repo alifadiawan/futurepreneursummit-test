@@ -25,67 +25,56 @@ const logos = [
 ];
 
 const LogoSlider = () => {
+    const extendedLogos = [...logos, ...logos];
+
     return (
         <>
-            {/* This style block injects the custom animation keyframes into Tailwind CSS.
-              It's a neat way to keep component-specific styles self-contained.
-            */}
             <style>
                 {`
                 @keyframes slide-left {
-                    0% {
-                        transform: translateX(0);
+                    from {
+                        transform: translateX(0%);
                     }
-                    100% {
-                        transform: translateX(-100%);
+                    to {
+                        transform: translateX(-50%);
                     }
                 }
+
                 .animate-slide-left {
-                    animation: slide-left 30s linear infinite;
+                    animation: slide-left 15s linear infinite;
+                    will-change: transform; /* Performance optimization hint */
+                }
+
+                .group:hover .animate-slide-left {
+                    animation-play-state: paused;
                 }
                 `}
             </style>
 
-            <section className="bg-white py-4">
+            <section className="bg-slate-50 py-12 sm:py-16 antialiased">
                 <div className="container mx-auto px-4">
-                    {/* <h2 className="text-center text-3xl font-bold text-gray-800 mb-2">
-                        Trusted by the World's Most Innovative Teams
-                    </h2>
-                    <p className="text-center text-lg text-gray-500 mb-10">
-                        Our partners and clients are at the forefront of their industries.
-                    </p> */}
 
-                    {/* The mask-image provides the fade-out effect on the left and right edges,
+                    {/* The mask-image provides the fade-out effect on the edges,
                       making the continuous loop appear more natural.
                     */}
                     <div
-                        className="group relative overflow-hidden whitespace-nowrap py-4"
+                        className="group relative overflow-hidden whitespace-nowrap"
                         style={{
-                            maskImage: 'linear-gradient(to right, transparent 0, black 128px, black calc(100% - 128px), transparent 100%)',
-                            WebkitMaskImage: 'linear-gradient(to right, transparent 0, black 128px, black calc(100% - 128px), transparent 100%)',
+                            WebkitMaskImage: 'linear-gradient(to right, transparent, black 64px, black calc(100% - 64px), transparent)',
+                            maskImage: 'linear-gradient(to right, transparent, black 64px, black calc(100% - 64px), transparent)',
                         }}
                     >
-                        <div className="flex w-max animate-slide-left group-hover:pause-animation">
-
-                            {/* First set of logos */}
-                            {logos.map((logo, index) => (
-                                <div key={`logo-${index}`} className="mx-12 flex-shrink-0">
+                        <div className="flex animate-slide-left">
+                            {extendedLogos.map((logo, index) => (
+                                <div key={index} className="mx-8 flex flex-shrink-0 items-center justify-center">
                                     <img
-                                        className="h-32 w-auto object-contain"
+                                        className="h-20 w-auto object-contain"
                                         src={logo.src}
                                         alt={logo.alt}
-                                    />
-                                </div>
-                            ))}
-
-                            {/* Second set of logos (for the seamless loop) */}
-                            {logos.map((logo, index) => (
-                                <div key={`logo-duplicate-${index}`} className="mx-12 flex-shrink-0">
-                                    <img
-                                        className="h-32 w-auto object-contain"
-                                        loading='lazy'
-                                        src={logo.src}
-                                        alt={logo.alt}
+                                        width="160"
+                                        height="64"
+                                        loading="lazy"
+                                        decoding="async"
                                     />
                                 </div>
                             ))}

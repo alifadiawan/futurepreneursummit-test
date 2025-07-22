@@ -10,15 +10,15 @@ const PixelTransition = ({ imageUrl, title, ctaText, ctaLink }) => {
       whileHover={{ scale: 1.05 }}
       className="max-w-sm mx-auto overflow-hidden rounded-2xl border border-orange-200 shadow-lg transition-transform"
     >
-      <div className="aspect-[16/9] w-full">
+      <div className="aspect-[1/1] w-full">
         <img
           src={imageUrl}
           alt={title}
           decoding="async"
           loading="lazy"
-          fetchpriority="low"
-          width="640"
-          height="360"
+          fetchPriority="high"
+          width="960"
+          height="480"
           className="w-full h-full object-contain"
           onError={(e) => {
             e.target.onerror = null;

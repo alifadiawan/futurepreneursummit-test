@@ -18,7 +18,7 @@ const ImageBackground = () => {
                 className="absolute inset-0 w-full h-full bg-cover bg-center z-0"
                 style={{
                     backgroundImage: `url(${bgImage})`,
-                    willChange: 'transform, opacity',
+                    willChange: 'transform, opacity',     
                 }}
             >
                 <motion.div
@@ -67,11 +67,9 @@ const ImageBackground = () => {
                         ease: "easeInOut",
                     }}
                 >
-                    <button className="px-6 py-4 bg-orange-400 rounded-full text-white font-bold z-99">REGISTER NOW</button>
+                    <a className="px-6 py-4 bg-green-600 rounded-full text-white font-bold z-99">REGISTER NOW</a>
                 </motion.div>
             </motion.div>
-
-
         </section>
     )
 }

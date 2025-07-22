@@ -10,8 +10,6 @@ import futureminds from '../assets/programs/futureminds.png';
 import twibbonchampion from '../assets/programs/twibbon_champion.png';
 import hadiah from '../assets/20jt.png';
 
-
-
 const CompetitionCard = ({ logo, title, description, link = "#" }) => (
     <motion.div
         whileHover={{ scale: 1.05 }}

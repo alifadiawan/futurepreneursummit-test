@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useRef } from 'react';
+import { motion } from "framer-motion";
 
-// --- Mock Data ---
-// This now serves as default data. In a real Inertia.js application,
-// you would pass your event data as a prop to the CarouselCard component.
 const defaultEvents = [
     {
         id: 1,
@@ -141,21 +139,26 @@ export default function CarouselCard({ events = defaultEvents }) {
     };
 
     return (
-        <div className="flex items-center justify-center font-sans p-4 md:p-8">
+        <div className="flex items-center justify-center font-sans p-4 md:p-8"
+        >
             <div className="w-full mx-auto relative">
                 <div
                     ref={scrollContainerRef}
                     className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide overflow-hidden"
                 >
-                    {events.map((event) => (
-                        <div
+                    {events.map((event, index) => (
+                        <motion.div
                             key={event.id}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.05 }}
+                            transition={{ duration: 0.25, ease: "easeOut", delay: index * 0.05 }}
                             // w-full on mobile, w-1/3 on desktop
                             className="w-full md:w-1/3 flex-shrink-0 p-2 
                                        snap-center md:snap-start" // 🔑 Snap alignment
                         >
                             <EventCard {...event} />
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 

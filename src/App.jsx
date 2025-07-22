@@ -1,10 +1,5 @@
 import { useState } from 'react'
 import Guest from './Layout/Guest';
-import logo from './assets/Logo-FEST-LIGHT.png';
-import Home from './Pages/Home';
-import AboutUs from './Components/AboutUs';
-import ScrollVelocity from './Components/ScrollVelocity';
-import ImageCarousel from './Components/ImageCarousel';
 
 import VideoBackground from './Sections/VideoBackground';
 import LogoSlider from './Sections/LogoSlider'
@@ -28,7 +23,7 @@ function App() {
   return (
     <Guest>
       {/* Scroll Effect */}
-      <ScrollEffect />
+      {/* <ScrollEffect /> */}
 
       {/* <VideoBackground /> */}
       <ImageBackground />

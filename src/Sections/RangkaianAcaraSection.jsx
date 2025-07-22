@@ -41,8 +41,6 @@ const RangkaianAcaraSection = () => {
             <motion.h2
               // THEME CHANGE: Text is now dark for readability.
               className="text-2xl md:text-3xl font-black text-black tracking-wide"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
             >
               Rangkaian Acara
             </motion.h2>
@@ -56,7 +54,12 @@ const RangkaianAcaraSection = () => {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-center gap-3 w-full">
+        <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-center gap-3 w-full"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.05 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+        >
           <PixelTransition
             imageUrl={grandsummit}
             title="Futurepreneur National Competition"
@@ -87,7 +90,7 @@ const RangkaianAcaraSection = () => {
             ctaText="More"
             ctaLink="#"
           />
-        </div>
+        </motion.div>
 
         {/* <div className="flex flex-row gap-3">
             <SpotlightCard 
@@ -139,7 +142,7 @@ const RangkaianAcaraSection = () => {
         </div> */}
 
       </div>
-    </section>
+    </section >
   )
 }
 

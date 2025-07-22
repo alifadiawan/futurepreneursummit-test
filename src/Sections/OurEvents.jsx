@@ -3,10 +3,12 @@ import CarouselCard from '../Components/CarouselCard'
 import { div } from 'framer-motion/client';
 import bgbg from '../assets/bg-konser.png';
 import bgbg2 from '../assets/bg-purple-2.jpg';
+import BG_IMAGE_URL from '../assets/5185208.jpg';
+import BG_IMAGE_URL_2 from '../assets/bg-purple-2GS.jpg';
+import bandung from '../assets/bandung.webp';
 
 import { motion } from 'framer-motion';
 
-import bandung from '../assets/bandung.webp';
 
 const OurEvents = () => {
 
@@ -57,14 +59,14 @@ const OurEvents = () => {
       className="py-16 md:py-32 relative overflow-hidden"
       id="aboutus"
       style={{
-        backgroundImage: `url(${bgbg2})`,
+        backgroundImage: `url(${BG_IMAGE_URL_2})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed' // Optional: for a parallax effect
+        // backgroundAttachment: 'fixed' // Optional: for a parallax effect
       }}
     >
       {/* THEME CHANGE: Added a semi-transparent white overlay to ensure text readability over the background image. */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/10"></div>
 
       <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
         {/* Section Title */}
