@@ -44,7 +44,7 @@ const AboutUsSection = () => {
         >
             <div className="absolute inset-0 bg-black/30"></div>
 
-            <div className="container mx-auto px-4 relative z-10">
+            <div className="container lg:px-24 px-6 mx-auto relative z-10">
                 <motion.div
                     initial="hidden"
                     whileInView="visible"

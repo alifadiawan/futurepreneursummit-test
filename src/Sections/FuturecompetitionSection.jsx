@@ -1,8 +1,10 @@
 import React from 'react';
 import natinalcompetition from '../assets/programs/national_competition.png';
 import backgroundImage from '../assets/bg-green.jpeg';
+import backgroundImage2 from '../assets/bg-green-2.jpeg';
+
 // import { Head } from '@inertiajs/react';
-import { motion } from 'framer-motion'; // Add this import for animations
+import { motion } from 'framer-motion';
 
 import startupfounder from '../assets/programs/startup_founder.png';
 import visioncraft from '../assets/programs/vision_craft.png';
@@ -34,7 +36,7 @@ const FuturecompetitionSection = () => {
             <div
                 className="min-h-screen"
                 style={{
-                    backgroundImage: `url(${backgroundImage})`,
+                    backgroundImage: `url(${backgroundImage2})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
@@ -45,7 +47,7 @@ const FuturecompetitionSection = () => {
                     {/* This is likely for a background image or effect, leaving as is */}
                     <div className="absolute inset-0"></div>
 
-                    <div className="mx-auto max-w-7xl px-6 lg:px-8 pt-20 pb-32">
+                    <div className="container mx-auto px-6 lg:px-24 md:px-12 pt-20 pb-32">
 
                         {/* --- Section 1: Introduction --- */}
                         {/* Added `items-center` to center the logo horizontally */}
@@ -110,17 +112,17 @@ const FuturecompetitionSection = () => {
                                 <CompetitionCard
                                     logo={visioncraft}
                                     title="Visioncraft Poster Challenge"
-                                    description="Kompetisi Desain Poster"
+                                    description="Ekspresikan ide cemerlangmu lewat poster dan rebut juara!"
                                 />
                                 <CompetitionCard
                                     logo={futureminds}
                                     title="Future Minds Essay Contest"
-                                    description="Kompetisi Menulis Essay"
+                                    description="Tulis ide terbaikmu dan menangkan kompetisinya!"
                                 />
                                 <CompetitionCard
                                     logo={twibbonchampion}
                                     title="Twibbon Champion Hunt"
-                                    description="Kompetisi Post Twibbon"
+                                    description="Tunjukkan semangatmu lewat Twibbon dan jadilah inspirasi!"
                                 />
                             </div>
                         </section>

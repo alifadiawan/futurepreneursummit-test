@@ -73,10 +73,10 @@ const PortfolioSection = () => {
 
     return (
         <section
-            className="text-gray-800 py-16 lg:px-0 px-6 font-sans"
+            className="text-gray-800 py-16  font-sans"
             style={abstractBgStyle}
         >
-            <div className="container mx-auto">
+            <div className="container mx-auto lg:px-24 px-6">
                 {/* Section Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">

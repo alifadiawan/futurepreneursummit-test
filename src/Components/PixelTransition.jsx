@@ -8,25 +8,26 @@ const PixelTransition = ({ imageUrl, title, ctaText, ctaLink }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.1, ease: "easeOut" }}
       whileHover={{ scale: 1.05 }}
-      className="max-w-sm mx-auto overflow-hidden rounded-2xl border border-orange-200 shadow-lg transition-transform"
+      className="max-w-xs mx-auto overflow-hidden rounded-2xl border border-orange-200 shadow-lg transition-transform"
     >
-      <div className="aspect-[1/1] w-full">
+      <div className="w-full aspect-[9/6]">
         <img
           src={imageUrl}
           alt={title}
           decoding="async"
           loading="lazy"
           fetchPriority="high"
-          width="960"
-          height="480"
+          width="320"
+          height="192"
           className="w-full h-full object-contain"
           onError={(e) => {
             e.target.onerror = null;
-            e.target.src = 'https://placehold.co/640x360/000000/FFFFFF?text=Image+Not+Found';
+            e.target.src = 'https://placehold.co/320x192/000000/FFFFFF?text=Image+Not+Found';
           }}
         />
       </div>
     </motion.div>
+
   )
 }
 

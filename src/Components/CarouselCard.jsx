@@ -139,7 +139,7 @@ export default function CarouselCard({ events = defaultEvents }) {
     };
 
     return (
-        <div className="flex items-center justify-center font-sans p-4 md:p-8"
+        <div className="flex items-center justify-center font-sans"
         >
             <div className="w-full mx-auto relative">
                 <div

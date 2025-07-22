@@ -59,7 +59,7 @@ const OurEvents = () => {
       className="py-16 md:py-32 relative overflow-hidden"
       id="aboutus"
       style={{
-        backgroundImage: `url(${BG_IMAGE_URL_2})`,
+        backgroundImage: `url(${BG_IMAGE_URL})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         // backgroundAttachment: 'fixed' // Optional: for a parallax effect
@@ -68,7 +68,7 @@ const OurEvents = () => {
       {/* THEME CHANGE: Added a semi-transparent white overlay to ensure text readability over the background image. */}
       <div className="absolute inset-0 bg-black/10"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+      <div className="container mx-auto lg:px-24 px-6 md:px-6 relative z-10">
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

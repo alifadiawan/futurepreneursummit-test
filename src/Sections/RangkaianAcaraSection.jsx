@@ -28,7 +28,7 @@ const RangkaianAcaraSection = () => {
       {/* THEME CHANGE: Added a semi-transparent white overlay to ensure text readability over the background image. */}
       <div className="absolute inset-0 bg-white"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 md:px-24 relative z-10">
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
