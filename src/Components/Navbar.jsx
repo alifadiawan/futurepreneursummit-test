@@ -75,7 +75,7 @@ const Navbar = () => {
             initial="hidden"
             animate="visible"
         >
-            <div className="px-4 sm:px-6 lg:px-24">
+            <div className="px-4 sm:px-6 lg:px-48">
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
                     <motion.div
