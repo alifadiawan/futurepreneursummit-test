@@ -1,8 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+
+    // bg navbar
+    useEffect(() => {
+        const handleScroll = () => {
+            // Set isScrolled to true if user has scrolled more than 10px
+            if (window.scrollY > 10) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        // Add event listener for scroll
+        window.addEventListener('scroll', handleScroll);
+
+        // Cleanup function to remove the event listener
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []); // Empty dependency array ensures this effect runs only once
+
 
     // Animation variants for the main navbar container
     const navVariants = {
@@ -45,7 +68,8 @@ const Navbar = () => {
 
     return (
         <motion.nav
-            className="fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-50 bg-transparent backdrop-blur-lg"
+            // Conditionally apply classes based on the scroll state
+            className={`fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-50 transition-colors duration-300 ${isScrolled ? 'bg-[#0b0c46]' : 'bg-transparent'}`}
             // Apply nav variants for initial load animation
             variants={navVariants}
             initial="hidden"
@@ -65,6 +89,7 @@ const Navbar = () => {
                             src="https://futurepreneursummit.com/__landing/images/logo.png"
                             alt="Logo"
                             className="w-36"
+                            onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/144x40/000000/FFFFFF?text=Logo'; }}
                         />
                     </motion.div>
 
