@@ -1,9 +1,15 @@
 import React from 'react';
-import brand1 from '../assets/brands/width_200.webp'
-import brand2 from '../assets/brands/brands2.webp'
-import brand3 from '../assets/brands/brands3.webp'
-import brand4 from '../assets/brands/brand4.png'
-import brand5 from '../assets/brands/brand4.webp'
+// import brand1 from '../assets/brands/width_200.webp'
+// import brand2 from '../assets/brands/brands2.webp'
+// import brand3 from '../assets/brands/brands3.webp'
+// import brand4 from '../assets/brands/brand4.png'
+// import brand5 from '../assets/brands/brand4.webp'
+
+import brand1 from '../assets/brands/LOGO-1.png'
+import brand2 from '../assets/brands/LOGO-2.png'
+import brand3 from '../assets/brands/LOGO-3.png'
+import brand4 from '../assets/brands/LOGO-4.png'
+import brand5 from '../assets/brands/LOGO-5.png'
 
 const logos = [
     { src: brand1, alt: "Brand 1" },
@@ -40,7 +46,7 @@ const LogoSlider = () => {
                 `}
             </style>
 
-            <section className="bg-white py-12">
+            <section className="bg-white py-4">
                 <div className="container mx-auto px-4">
                     {/* <h2 className="text-center text-3xl font-bold text-gray-800 mb-2">
                         Trusted by the World's Most Innovative Teams
@@ -65,7 +71,7 @@ const LogoSlider = () => {
                             {logos.map((logo, index) => (
                                 <div key={`logo-${index}`} className="mx-12 flex-shrink-0">
                                     <img
-                                        className="h-24 w-auto object-contain"
+                                        className="h-32 w-auto object-contain"
                                         src={logo.src}
                                         alt={logo.alt}
                                     />
@@ -76,7 +82,7 @@ const LogoSlider = () => {
                             {logos.map((logo, index) => (
                                 <div key={`logo-duplicate-${index}`} className="mx-12 flex-shrink-0">
                                     <img
-                                        className="h-24 w-auto object-contain"
+                                        className="h-32 w-auto object-contain"
                                         loading='lazy'
                                         src={logo.src}
                                         alt={logo.alt}

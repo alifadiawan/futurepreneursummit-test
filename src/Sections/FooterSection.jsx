@@ -11,9 +11,6 @@ const FooterSection = () => {
           {/* Company Info */}
           <div>
             <img src={logofest} alt="logo fest" className="w-64 mb-5" />
-            <p className="text-purple-200">
-              Empowering future entrepreneurs with knowledge and connections.
-            </p>
           </div>
 
           {/* Quick Links */}

@@ -23,7 +23,7 @@ const OrganizationsSection = () => {
       {/* THEME CHANGE: Added a semi-transparent white overlay to ensure text readability over the background image. */}
       <div className="absolute inset-0 bg-white"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+      <div className="container mx-auto lg:px-0 px-6 relative z-10">
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -51,7 +51,7 @@ const OrganizationsSection = () => {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 justify-center gap-3 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-3 w-full">
           <PixelTransition
             imageUrl={unair}
             title="Futurepreneur National Competition"

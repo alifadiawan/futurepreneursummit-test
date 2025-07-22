@@ -56,7 +56,7 @@ const RangkaianAcaraSection = () => {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 justify-center gap-3 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-center gap-3 w-full">
           <PixelTransition
             imageUrl={grandsummit}
             title="Futurepreneur National Competition"

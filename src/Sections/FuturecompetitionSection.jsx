@@ -80,7 +80,7 @@ const FuturecompetitionSection = () => {
                         >
                             <div className="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-2xl mb-16">
                                 <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-                                    Total Hadiah <span className="text-yellow-500">Rp 20.000.000</span>
+                                    Total Hadiah <br /><span className="text-yellow-500">Rp 20.000.000</span>
                                 </h2>
                                 <p className="text-xl text-emerald-600 font-semibold mb-8">Plus Mentoring dari Top Entrepreneurs!</p>
 
@@ -106,22 +106,22 @@ const FuturecompetitionSection = () => {
                             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                                 <CompetitionCard
                                     logo={startupfounder}
-                                    title="Startup Founder"
+                                    title="Startup Founder Clash"
                                     description="Presentasikan ide bisnismu dan dapatkan pendanaan"
                                 />
                                 <CompetitionCard
                                     logo={visioncraft}
-                                    title="Visioncraft"
+                                    title="Visioncraft Poster Challenge"
                                     description="Kompetisi Desain Poster"
                                 />
                                 <CompetitionCard
                                     logo={futureminds}
-                                    title="Futureminds"
+                                    title="Future Minds Essay Contest"
                                     description="Kompetisi Menulis Essay"
                                 />
                                 <CompetitionCard
                                     logo={twibbonchampion}
-                                    title="Twibbon Champion"
+                                    title="Twibbon Champion Hunt"
                                     description="Kompetisi Post Twibbon"
                                 />
                             </div>

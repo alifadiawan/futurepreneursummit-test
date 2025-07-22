@@ -10,6 +10,15 @@ import kahf from '../assets/sponsors/kahf.png';
 import bening from '../assets/sponsors/bening.png';
 import yamaha from '../assets/sponsors/yamaha.png';
 
+import sponsor20 from '../assets/sponsors/20.png';
+import sponsor21 from '../assets/sponsors/21.png';
+import sponsor22 from '../assets/sponsors/22.png';
+import sponsor23 from '../assets/sponsors/23.png';
+import sponsor24 from '../assets/sponsors/24.png';
+import sponsor25 from '../assets/sponsors/25.png';
+import sponsor26 from '../assets/sponsors/26.png';
+
+
 const SponsorsSection = () => {
   return (
     <section
@@ -53,7 +62,7 @@ const SponsorsSection = () => {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 justify-center gap-3 w-full">
+        <div className="grid grid-cols-2 lg:grid-cols-4 justify-center gap-3 w-full">
           <PixelTransition
             imageUrl={golda}
             title="Futurepreneur National Competition"
@@ -92,6 +101,48 @@ const SponsorsSection = () => {
           />
           <PixelTransition
             imageUrl={yamaha}
+            title="Futurepreneur International Program"
+            ctaText="More"
+            ctaLink="#"
+          />
+           <PixelTransition
+            imageUrl={sponsor20}
+            title="Futurepreneur International Program"
+            ctaText="More"
+            ctaLink="#"
+          />
+           <PixelTransition
+            imageUrl={sponsor21}
+            title="Futurepreneur International Program"
+            ctaText="More"
+            ctaLink="#"
+          />
+           <PixelTransition
+            imageUrl={sponsor22}
+            title="Futurepreneur International Program"
+            ctaText="More"
+            ctaLink="#"
+          />
+           <PixelTransition
+            imageUrl={sponsor23}  
+            title="Futurepreneur International Program"
+            ctaText="More"
+            ctaLink="#"
+          />
+           <PixelTransition
+            imageUrl={sponsor24}
+            title="Futurepreneur International Program"
+            ctaText="More"
+            ctaLink="#"
+          />
+           <PixelTransition
+            imageUrl={sponsor25}
+            title="Futurepreneur International Program"
+            ctaText="More"
+            ctaLink="#"
+          />
+           <PixelTransition
+            imageUrl={sponsor26}
             title="Futurepreneur International Program"
             ctaText="More"
             ctaLink="#"

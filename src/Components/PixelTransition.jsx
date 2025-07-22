@@ -8,7 +8,7 @@ const PixelTransition = ({ imageUrl, title, ctaText, ctaLink }) => {
         loading='lazy'
         src={imageUrl}
         alt={title}
-        className="w-full h-56 object-contain"
+        className="w-full  object-cover"
         onError={(e) => {
           e.target.onerror = null;
           e.target.src = 'https://placehold.co/600x400/000000/FFFFFF?text=Image+Not+Found';

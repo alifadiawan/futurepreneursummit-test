@@ -17,6 +17,7 @@ import RangkaianAcaraSection from './Sections/RangkaianAcaraSection'
 import GrandSummitSection from './Sections/GrandSummitSection'
 import OurEvents from './Sections/OurEvents'
 import ScrollEffect from './Components/ScrollEffect'
+import ImageBackground from './Components/ImageBackground'
 
 
 
@@ -29,7 +30,8 @@ function App() {
       {/* Scroll Effect */}
       <ScrollEffect />
 
-      <VideoBackground />
+      {/* <VideoBackground /> */}
+      <ImageBackground />
 
       <LogoSlider />
 
@@ -40,9 +42,6 @@ function App() {
 
       {/* Grand Summit */}
       <GrandSummitSection />
-
-      {/* Sponsors */}
-      <SponsorsSection />
 
       {/* our events */}
       <OurEvents />
@@ -55,6 +54,9 @@ function App() {
 
       {/* Organization  */}
       <OrganizationsSection />
+
+      {/* Sponsors */}
+      <SponsorsSection />
 
     </Guest>
   )
