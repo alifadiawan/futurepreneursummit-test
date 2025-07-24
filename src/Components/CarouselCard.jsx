@@ -76,7 +76,7 @@ const EventCard = ({ title, date, location, featured_guest_star, subtitle, image
 
     return (
         <div className="flex-shrink-0 w-full">
-            <div className="bg-gray-900 rounded-3xl shadow-2xl overflow-hidden flex flex-col h-full">
+            <div className="bg-gray-900 rounded-3xl  overflow-hidden flex flex-col h-full">
                 <div
                     className="relative flex-grow text-white"
                     style={{ aspectRatio: '210 / 297' }} // or '7 / 10', or '2 / 3' for simplified ratio
@@ -154,7 +154,7 @@ export default function CarouselCard({ events = defaultEvents }) {
                             viewport={{ once: true, amount: 0.05 }}
                             transition={{ duration: 0.25, ease: "easeOut", delay: index * 0.05 }}
                             // w-full on mobile, w-1/3 on desktop
-                            className="w-full md:w-1/3 flex-shrink-0 p-2 
+                            className="w-full md:w-1/3 flex-shrink-0  px-4
                                        snap-center md:snap-start" // 🔑 Snap alignment
                         >
                             <EventCard {...event} />

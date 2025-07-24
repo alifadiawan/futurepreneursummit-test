@@ -31,8 +31,8 @@ const portfolioData = [
     },
     {
         id: 3,
-        title: 'Nature Photography Blog',
-        youtubeUrl: 'https://www.youtube.com/embed/ysz5S6PUM-U',
+        title: 'Future Entrepreneur Summit - Surabaya (Surabaya Creativepreneur Festival 2023)',
+        youtubeUrl: 'https://www.youtube.com/embed/aCwcJZYmDu0?si=29I9WcK1FirIvKfA',
         tags: ['Gatsby', 'GraphQL', 'Contentful', 'Styled-Components'],
     },
 ];

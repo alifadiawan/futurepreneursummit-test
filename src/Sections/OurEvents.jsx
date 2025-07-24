@@ -5,6 +5,8 @@ import bgbg from '../assets/bg-konser.png';
 import bgbg2 from '../assets/bg-purple-2.jpg';
 import BG_IMAGE_URL from '../assets/5185208.jpg';
 import BG_IMAGE_URL_2 from '../assets/bg-purple-2GS.jpg';
+import BG_IMAGE_URL_3 from '../assets/bg_hiring.png';
+
 import bandung from '../assets/bandung.webp';
 
 import { motion } from 'framer-motion';
@@ -16,7 +18,7 @@ const OurEvents = () => {
     {
       id: 1,
       location: 'Surabaya',
-      date: '10 Desember',
+      date: '10 Desember 2023',
       title: 'Future Entrepreneur Summit',
       subtitle: 'The Journey of the Gen Z Futurepreneur',
       imageUrl: 'https://futurepreneursummit.com/storage/SURABAYA.jpg',
@@ -34,7 +36,7 @@ const OurEvents = () => {
     {
       id: 3,
       location: 'Purwokerto',
-      date: '10 Desember',
+      date: '10 Desember 2023',
       title: 'Future Entrepreneur Summit',
       subtitle: 'The Journey of the Gen Z Futurepreneur',
       imageUrl: 'https://futurepreneursummit.com/storage/SURABAYA.jpg',
@@ -43,7 +45,7 @@ const OurEvents = () => {
     {
       id: 4,
       location: 'Purwokerto',
-      date: '10 Desember',
+      date: '10 Desember 2023',
       title: 'Future Entrepreneur Summit',
       subtitle: 'The Journey of the Gen Z Futurepreneur',
       imageUrl: 'https://futurepreneursummit.com/storage/SURABAYA.jpg',
@@ -59,7 +61,7 @@ const OurEvents = () => {
       className="py-16 md:py-32 relative overflow-hidden"
       id="aboutus"
       style={{
-        backgroundImage: `url(${BG_IMAGE_URL})`,
+        backgroundImage: `url(${BG_IMAGE_URL_3})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         // backgroundAttachment: 'fixed' // Optional: for a parallax effect
@@ -80,7 +82,7 @@ const OurEvents = () => {
           <div className="inline-block">
             <motion.h2
               // THEME CHANGE: Text is now dark for readability.
-              className="text-2xl md:text-3xl font-black text-white tracking-wide"
+              className="text-2xl md:text-3xl font-black text-black tracking-wide"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >

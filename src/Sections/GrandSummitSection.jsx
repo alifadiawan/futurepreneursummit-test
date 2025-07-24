@@ -1,6 +1,6 @@
 import React from 'react';
 import BG_IMAGE_URL from '../assets/5185208.jpg';
-import bgbg2 from '../assets/bg-purple-2.jpg'
+import bgbg2 from '../assets/bg-purple.png'
 import MAIN_IMAGE_URL from '../assets/programs/grand-summit.png';
 import { motion } from "framer-motion"
 
@@ -46,13 +46,13 @@ const GrandSummitSection = () => {
   const gridData = [
     { id: 1, title: "SEMINAR/TALKSHOW", text: "Seminar akan diikutin oleh banyak peserta yang akan dihadiri oleh pembicara/pemateri yang akan langsung disampaikan di depan panggung dengan materi yang telah ditentukan, tentunya mengenai Entrepreneur dan lainya.", imageUrl: SEMINAR },
     { id: 2, title: "QUIZ GAME & DOORPRIZE", text: "Quiz Game dan Doorprize diberikan sebagai bentuk hiburan/refresh untuk peserta yang telah antusias mengikuti kegiatan seminar dan akan dipilih melalui keaktifan mengajukan pertanyaan pada saat kegiatan berlangsung.", imageUrl: DOORPRIZE },
-    { id: 3, title: "ACCOUSTIC  PERFORMANCE", text: "Pada saat kegiatan Seminar akan kita berikan Hiburan musik meliputi Band, Akustik dll, sebagai Ice breaking agar selama mengikuti kegiatan peserta tetap enjoy and fun.", imageUrl: MUSIK },
+    { id: 3, title: "ACCOUSTIC  PERFORMANCE", text: "Seminar akan kita berikan Hiburan musik meliputi Band, Akustik dll, sebagai Ice breaking agar selama mengikuti kegiatan peserta tetap enjoy and fun. Selain itu, penampilan hiburan ini juga menjadi momen interaktif yang mempererat suasana ", imageUrl: MUSIK },
     { id: 4, title: "BAZAAR UMKM MILLENIAL", text: "Bazaar akan dilaksanakan ketika kegiatan Seminar berlangsung sebagai bentuk konkrit dalam mendukung UMKM agar UMKM memiliki wadah untuk langsung menjual produknya kepada peserta Seminar", imageUrl: BAZAAR },
   ];
 
   return (
     <div
-      className="min-h-screen w-full bg-cover bg-center font-sans"
+      className="min-h-screen w-full bg-center font-sans"
       style={{ backgroundImage: `url(${bgbg2})` }}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}

@@ -1,7 +1,10 @@
 import React from 'react';
-import natinalcompetition from '../assets/programs/national_competition.png';
+import natinalcompetition from '../assets/programs/national_competition-3.png';
 import backgroundImage from '../assets/bg-green.jpeg';
 import backgroundImage2 from '../assets/bg-green-2.jpeg';
+
+import bgblack1 from '../assets/black.jpg';
+import bgblack2 from '../assets/black-2.jpg';
 
 // import { Head } from '@inertiajs/react';
 import { motion } from 'framer-motion';
@@ -36,7 +39,7 @@ const FuturecompetitionSection = () => {
             <div
                 className="min-h-screen"
                 style={{
-                    backgroundImage: `url(${backgroundImage2})`,
+                    backgroundImage: `url(${bgblack1})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
@@ -50,30 +53,39 @@ const FuturecompetitionSection = () => {
                     <div className="container mx-auto px-6 lg:px-24 md:px-12 pt-20 pb-32">
 
                         {/* --- Section 1: Introduction --- */}
-                        {/* Added `items-center` to center the logo horizontally */}
-                        <div className="flex flex-col w-full items-center justify-center gap-12 mb-24">
-                            <img src={natinalcompetition} className="max-w-lg w-full" alt="logo_national" />
+                        <div className="flex flex-col w-full items-center justify-center gap-12 mb-2 mt-12">
+                            <img src={natinalcompetition} className="max-w-2xl w-full" alt="logo_national" />
 
-                            {/* REVISED: This container is now responsive */}
-                            <div className="flex flex-col md:flex-row gap-8 items-center w-full">
-
-                                {/* Text Block: Takes up 2/3 of the width on medium screens and up */}
-                                <div className="md:w-2/3">
-                                    <p className="p-6 text-xl md:text-2xl bg-white/90 backdrop-blur-sm rounded-xl shadow-lg text-gray-800">
+                            <div className="flex flex-col-reverse md:flex-row gap-8 items-center">
+                                <div className="flex flex-col gap-6 w-full md:w-2/3">
+                                    <div className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg text-gray-300 p-6 text-justify text-xl md:text-2xl">
                                         Futurepreneur National Competition adalah ajang wirausaha kekinian untuk generasi muda yang mencakup empat kategori seru: kompetisi ide bisnis inovatif, kompetisi esai inspiratif, kompetisi poster kreatif, dan kompetisi post twibbon yang viral, semuanya untuk mengasah kreativitas dan semangat entrepreneur digital di era sekarang.
-                                    </p>
+
+                                        Ayo tunjukkan potensimu untuk menjadi entrepreneur masa depan!
+                                    </div>
+                                    <div className="flex flex-row gap-2">
+                                        <a href="#guidebook" className="rounded-full bg-blue-600 px-8 py-4 text-lg font-bold text-white hover:bg-emerald-700 transition-colors duration-300">
+                                            Download Guidebook
+                                        </a>
+                                        <a href="#guidebook" className="rounded-full bg-emerald-600 px-8 py-4 text-lg font-bold text-white hover:bg-emerald-700 transition-colors duration-300">
+                                            Daftar Sekarang
+                                        </a>
+                                    </div>
                                 </div>
 
-                                {/* Image Block: Takes up 1/3 of the width on medium screens and up */}
-                                <div className="md:w-1/3 w-full">
-                                    {/* Added styling to the image to ensure it fits the container */}
-                                    <img src={hadiah} alt="Total Hadiah" className="w-full h-auto object-contain rounded-lg" />
+                                <div className="lg:w-1/2">
+                                    <img src={hadiah} alt="Total Hadiah" className="w-[40rem] h-auto object-contain rounded-lg" />
                                 </div>
+                            </div>
+                            <div className="flex flex-col sm:flex-row gap-4">
+
+                                {/* <a href="#daftar" className="rounded-full bg-white px-8 py-4 text-lg font-bold text-emerald-600 border-2 border-emerald-600 hover:bg-emerald-50 transition-colors duration-300">
+                                    Daftar Sekarang
+                                </a> */}
                             </div>
                         </div>
 
-                        {/* --- Section 2: Call to Action (Hero) --- */}
-                        <motion.div
+                        {/* <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             className="mx-auto max-w-3xl text-center"
@@ -84,7 +96,6 @@ const FuturecompetitionSection = () => {
                                 </h2>
                                 <p className="text-xl text-emerald-600 font-semibold mb-8">Plus Mentoring dari Top Entrepreneurs!</p>
 
-                                {/* IMPROVED: Made the button group responsive */}
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <a href="#guidebook" className="rounded-full bg-emerald-600 px-8 py-4 text-lg font-bold text-white hover:bg-emerald-700 transition-colors duration-300">
                                         Download Guidebook
@@ -94,11 +105,12 @@ const FuturecompetitionSection = () => {
                                     </a>
                                 </div>
                             </div>
-                        </motion.div>
+                        </motion.div> */}
 
                         {/* --- Section 3: Competition Categories --- */}
-                        {/* This section was already well-designed and responsive. No changes needed. */}
-                        <section id="kompetisi" className="py-20">
+                        <section id="kompetisi" className="py-2">
+                            <hr className="mb-12 border-t-2 border-white w-full mx-auto" />
+
                             <div className="text-center mb-16">
                                 <h2 className="text-4xl font-bold text-white mb-4">Pilih Kategorimu</h2>
                                 <p className="text-xl text-white">Empat kategori yang akan menguji kreativitas dan inovasimu</p>

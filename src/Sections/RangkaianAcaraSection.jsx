@@ -60,7 +60,7 @@ const RangkaianAcaraSection = () => {
           viewport={{ once: true, amount: 0.05 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
         >
-          <PixelTransition
+          {/* <PixelTransition
             imageUrl={grandsummit}
             title="Futurepreneur National Competition"
             ctaText="More"
@@ -89,7 +89,127 @@ const RangkaianAcaraSection = () => {
             title="Futurepreneur International Program"
             ctaText="More"
             ctaLink="#"
-          />
+          /> */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.1, ease: "easeOut" }}
+            whileHover={{ scale: 1.05 }}
+            className="max-w-xs mx-auto overflow-hidden rounded-2xl border border-orange-200 shadow-lg transition-transform"
+          >
+            <div className="w-full">
+              <img
+                src={grandsummit}
+                alt={grandsummit}
+                decoding="async"
+                loading="lazy"
+                fetchPriority="high"
+                width="320"
+                height="192"
+                className="w-full h-full object-contain"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = 'https://placehold.co/320x192/000000/FFFFFF?text=Image+Not+Found';
+                }}
+              />
+            </div>
+          </motion.div>
+           <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.1, ease: "easeOut" }}
+            whileHover={{ scale: 1.05 }}
+            className="max-w-xs mx-auto overflow-hidden rounded-2xl border border-orange-200 shadow-lg transition-transform"
+          >
+            <div className="w-full">
+              <img
+                src={nationalcompetition}
+                alt={nationalcompetition}
+                decoding="async"
+                loading="lazy"
+                fetchPriority="high"
+                width="320"
+                height="192"
+                className="w-full h-full object-contain"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = 'https://placehold.co/320x192/000000/FFFFFF?text=Image+Not+Found';
+                }}
+              />
+            </div>
+          </motion.div>
+           <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.1, ease: "easeOut" }}
+            whileHover={{ scale: 1.05 }}
+            className="max-w-xs mx-auto overflow-hidden rounded-2xl border border-orange-200 shadow-lg transition-transform"
+          >
+            <div className="w-full">
+              <img
+                src={webminar}
+                alt={webminar}
+                decoding="async"
+                loading="lazy"
+                fetchPriority="high"
+                width="320"
+                height="192"
+                className="w-full h-full object-contain"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = 'https://placehold.co/320x192/000000/FFFFFF?text=Image+Not+Found';
+                }}
+              />
+            </div>
+          </motion.div>
+           <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.1, ease: "easeOut" }}
+            whileHover={{ scale: 1.05 }}
+            className="max-w-xs mx-auto overflow-hidden rounded-2xl border border-orange-200 shadow-lg transition-transform"
+          >
+            <div className="w-full">
+              <img
+                src={bootcamp}
+                alt={bootcamp}
+                decoding="async"
+                loading="lazy"
+                fetchPriority="high"
+                width="320"
+                height="192"
+                className="w-full h-full object-contain"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = 'https://placehold.co/320x192/000000/FFFFFF?text=Image+Not+Found';
+                }}
+              />
+            </div>
+          </motion.div>
+           <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.1, ease: "easeOut" }}
+            whileHover={{ scale: 1.05 }}
+            className="max-w-xs mx-auto overflow-hidden rounded-2xl border border-orange-200 shadow-lg transition-transform"
+          >
+            <div className="w-full">
+              <img
+                src={internationalprogram}
+                alt={internationalprogram}
+                decoding="async"
+                loading="lazy"
+                fetchPriority="high"
+                width="320"
+                height="192"
+                className="w-full h-full object-contain"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = 'https://placehold.co/320x192/000000/FFFFFF?text=Image+Not+Found';
+                }}
+              />
+            </div>
+          </motion.div>
         </motion.div>
 
         {/* <div className="flex flex-row gap-3">

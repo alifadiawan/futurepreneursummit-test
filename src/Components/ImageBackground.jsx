@@ -25,7 +25,7 @@ const ImageBackground = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 0.2 }}
                     transition={{ duration: 1.5 }}
-                    className="absolute inset-0 bg-black"
+                    className="absolute inset-0 "
                 />
             </motion.div>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 
-import bgbg2 from '../assets/bg-purple-2.jpg';
+import bgbg2 from '../assets/BG-ORANGE.png';
 import bgabout2 from '../assets/about-2.jpeg';
 import bgabout3 from '../assets/bg-about-3.webp';
 import bgabout4 from '../assets/YK-160.jpg';
@@ -42,7 +42,7 @@ const AboutUsSection = () => {
                 backgroundPosition: 'center',
             }}
         >
-            <div className="absolute inset-0 bg-black/30"></div>
+            <div className="absolute inset-0 bg-black/20"></div>
 
             <div className="container lg:px-24 px-6 mx-auto relative z-10">
                 <motion.div
@@ -102,6 +102,9 @@ const AboutUsSection = () => {
                                     </p>
                                     <p>
                                         Featuring speakers from academia and industry, the summit highlights evolving trends in entrepreneurship, supported by various communities to foster growth and innovation.
+                                    </p>
+                                    <p>
+                                        The event also serves as a networking hub for aspiring entrepreneurs, students, and professionals to connect, exchange ideas, and explore potential collaborations. Through interactive sessions and engaging discussions.
                                     </p>
                                 </div>
                             </div>
