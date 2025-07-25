@@ -96,10 +96,10 @@ const PortfolioSection = () => {
 
                 {/* Show More Button */}
                 <div className="mt-12 text-center">
-                    <button className="group inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
+                    {/* <button className="group inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
                         Show More
                         <ArrowRight />
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </section>

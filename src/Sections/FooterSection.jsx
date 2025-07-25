@@ -9,13 +9,13 @@ const FooterSection = () => {
       <div className="container mx-auto lg:px-24 px-12 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:text-start text-center">
           {/* Company Info */}
-          <div>
+          <div className="flex justify-center lg:justify-start">
             <img src={logofest} alt="logo fest" className="w-64 mb-5" />
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="fnt-bold text-xl mb-4">Qouick Links</h3>
+            <h3 className="fnt-bold text-xl mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-purple-200 hover:text-white">About</a></li>
               <li><a href="#" className="text-purple-200 hover:text-white">Events</a></li>
