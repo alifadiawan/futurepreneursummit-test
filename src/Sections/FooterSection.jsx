@@ -6,8 +6,8 @@ import logofest from '../assets/Logo-FEST-LIGHT.png'
 const FooterSection = () => {
   return (
     <footer className="bg-purple-900 text-white">
-      <div className="container mx-auto px-24 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto lg:px-24 px-12 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:text-start text-center">
           {/* Company Info */}
           <div>
             <img src={logofest} alt="logo fest" className="w-64 mb-5" />
@@ -15,7 +15,7 @@ const FooterSection = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-bold text-xl mb-4">Quick Links</h3>
+            <h3 className="fnt-bold text-xl mb-4">Qouick Links</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-purple-200 hover:text-white">About</a></li>
               <li><a href="#" className="text-purple-200 hover:text-white">Events</a></li>
@@ -27,7 +27,7 @@ const FooterSection = () => {
           {/* Social Media */}
           <div>
             <h3 className="font-bold text-xl mb-4">Connect With Us</h3>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 lg:justify-start justify-center">
               <a href="#" className="text-purple-200 hover:text-white"><Facebook size={24} /></a>
               <a href="#" className="text-purple-200 hover:text-white"><Twitter size={24} /></a>
               <a href="#" className="text-purple-200 hover:text-white"><Instagram size={24} /></a>

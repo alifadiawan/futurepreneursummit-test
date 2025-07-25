@@ -42,7 +42,7 @@ const AboutUsSection = () => {
                 backgroundPosition: 'center',
             }}
         >
-            <div className="absolute inset-0 bg-black/20"></div>
+            {/* <div className="absolute inset-0 bg-black/20"></div> */}
 
             <div className="container lg:px-24 px-6 mx-auto relative z-10">
                 <motion.div
@@ -91,7 +91,7 @@ const AboutUsSection = () => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="xl:col-span-5"
                     >
-                        <div className="bg-white/95 p-6 md:p-10 rounded-2xl shadow-md border border-orange-200/50 flex flex-col justify-between h-full">
+                        <div className="bg-white/95 p-6 md:p-10 rounded-2xl shadow-md border flex flex-col justify-between h-full">
                             <div>
                                 <h3 className="text-xl md:text-2xl font-bold mb-4 text-orange-700 border-b border-orange-200 pb-3">
                                     Our Story Since 2020

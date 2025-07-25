@@ -103,9 +103,10 @@ const Navbar = () => {
                             visible: { transition: { staggerChildren: 0.1, delayChildren: 0.3 } }
                         }}
                     >
-                        <motion.a href="#" className="text-white hover:text-gray-300" variants={menuItemVariants}>Home</motion.a>
-                        <motion.a href="#" className="text-white hover:text-gray-300" variants={menuItemVariants}>About</motion.a>
+                        <motion.a href="/" className="text-white hover:text-gray-300" variants={menuItemVariants}>Home</motion.a>
+                        <motion.a href="#about" className="text-white hover:text-gray-300" variants={menuItemVariants}>About</motion.a>
                         <motion.a href="#" className="text-white hover:text-gray-300" variants={menuItemVariants}>Services</motion.a>
+                        <motion.a href="/news" className="text-white hover:text-gray-300" variants={menuItemVariants}>News</motion.a>
                         <motion.a href="#" className="text-white hover:text-gray-300" variants={menuItemVariants}>Contact</motion.a>
                     </motion.div>
 
@@ -140,6 +141,7 @@ const Navbar = () => {
                             <motion.a href="#" className="text-white hover:text-gray-300" variants={menuItemVariants}>Home</motion.a>
                             <motion.a href="#" className="text-white hover:text-gray-300" variants={menuItemVariants}>About</motion.a>
                             <motion.a href="#" className="text-white hover:text-gray-300" variants={menuItemVariants}>Services</motion.a>
+                            <motion.a href="#" className="text-white hover:text-gray-300" variants={menuItemVariants}>News</motion.a>
                             <motion.a href="#" className="text-white hover:text-gray-300" variants={menuItemVariants}>Contact</motion.a>
                         </motion.div>
                     )}

@@ -39,7 +39,7 @@ const FuturecompetitionSection = () => {
             <div
                 className="min-h-screen"
                 style={{
-                    backgroundImage: `url(${bgblack1})`,
+                    backgroundImage: `url(${backgroundImage})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
@@ -48,7 +48,7 @@ const FuturecompetitionSection = () => {
                 {/* Hero Section */}
                 <main className="relative overflow-hidden">
                     {/* This is likely for a background image or effect, leaving as is */}
-                    <div className="absolute inset-0"></div>
+                    {/* <div className="absolute inset-0"></div> */}
 
                     <div className="container mx-auto px-6 lg:px-24 md:px-12 pt-20 pb-32">
 
@@ -58,13 +58,13 @@ const FuturecompetitionSection = () => {
 
                             <div className="flex flex-col-reverse md:flex-row gap-8 items-center">
                                 <div className="flex flex-col gap-6 w-full md:w-2/3">
-                                    <div className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg text-gray-300 p-6 text-justify text-xl md:text-2xl">
+                                    <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg text-gray-700 p-6 text-justify text-xl md:text-2xl">
                                         Futurepreneur National Competition adalah ajang wirausaha kekinian untuk generasi muda yang mencakup empat kategori seru: kompetisi ide bisnis inovatif, kompetisi esai inspiratif, kompetisi poster kreatif, dan kompetisi post twibbon yang viral, semuanya untuk mengasah kreativitas dan semangat entrepreneur digital di era sekarang.
 
                                         Ayo tunjukkan potensimu untuk menjadi entrepreneur masa depan!
                                     </div>
-                                    <div className="flex flex-row gap-2">
-                                        <a href="#guidebook" className="rounded-full bg-blue-600 px-8 py-4 text-lg font-bold text-white hover:bg-emerald-700 transition-colors duration-300">
+                                    <div className="flex flex-col lg:flex-row text-center gap-2">
+                                        <a href="#guidebook" className="rounded-full bg-blue-600 hover:bg-blue-700 active:bg-blue-700 px-8 py-4 text-lg font-bold text-white transition-colors duration-300">
                                             Download Guidebook
                                         </a>
                                         <a href="#guidebook" className="rounded-full bg-emerald-600 px-8 py-4 text-lg font-bold text-white hover:bg-emerald-700 transition-colors duration-300">
@@ -109,7 +109,7 @@ const FuturecompetitionSection = () => {
 
                         {/* --- Section 3: Competition Categories --- */}
                         <section id="kompetisi" className="py-2">
-                            <hr className="mb-12 border-t-2 border-white w-full mx-auto" />
+                            <hr className="mb-12 border-t-2 border-zinc-200 w-full mx-auto" />
 
                             <div className="text-center mb-16">
                                 <h2 className="text-4xl font-bold text-white mb-4">Pilih Kategorimu</h2>
