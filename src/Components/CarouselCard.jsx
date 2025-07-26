@@ -95,7 +95,7 @@ const EventCard = ({ title, date, location, featured_guest_star, subtitle, image
                     <header className="flex justify-between items-start mb-5">
                         <h3 className="font-extrabold text-2xl uppercase tracking-wider drop-shadow-lg">{location}</h3>
                         <div className="text-center">
-                            <p className="font-bold text-md bg-green-600 rounded-full px-4">Available Now</p>
+                            <p className="font-bold text-md bg-green-600 rounded-full px-4">Available</p>
                         </div>
                     </header>
                     <div className="flex-grow"></div>
@@ -111,9 +111,12 @@ const EventCard = ({ title, date, location, featured_guest_star, subtitle, image
                             </div>
                         </div>
                     </footer>
-                    <button className="w-full bg-purple-600 text-white font-bold py-3 px-4 rounded-xl hover:bg-purple-700 focus:outline-none focus:ring-4 focus:ring-purple-400 focus:ring-opacity-50 transition-all duration-300 transform hover:scale-105">
+                    <a
+                        href="/event-detail"
+                        className="block text-center bg-purple-600 text-white font-bold py-3 px-4 rounded-xl hover:bg-purple-700 focus:outline-none focus:ring-4 focus:ring-purple-400 focus:ring-opacity-50 transition-all duration-300 transform hover:scale-105"
+                    >
                         DAFTAR
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

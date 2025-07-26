@@ -59,7 +59,7 @@ const OurEvents = () => {
   return (
     <section
       className="py-16 md:py-32 relative overflow-hidden"
-      id="aboutus"
+      id="events"
       style={{
         backgroundImage: `url(${BG_IMAGE_URL_3})`,
         backgroundSize: 'cover',

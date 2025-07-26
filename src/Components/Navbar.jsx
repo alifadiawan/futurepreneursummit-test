@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -86,7 +87,7 @@ const Navbar = () => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
                         <img
-                            src="https://futurepreneursummit.com/__landing/images/logo.png"
+                            src={logo}
                             alt="Logo"
                             className="w-36"
                             onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/144x40/000000/FFFFFF?text=Logo'; }}
@@ -105,7 +106,7 @@ const Navbar = () => {
                     >
                         <motion.a href="/" className="text-white hover:text-gray-300" variants={menuItemVariants}>Home</motion.a>
                         <motion.a href="#aboutus" className="text-white hover:text-gray-300" variants={menuItemVariants}>About</motion.a>
-                        <motion.a href="#" className="text-white hover:text-gray-300" variants={menuItemVariants}>Services</motion.a>
+                        <motion.a href="/#events" className="text-white hover:text-gray-300" variants={menuItemVariants}>Events</motion.a>
                         <motion.a href="/news" className="text-white hover:text-gray-300" variants={menuItemVariants}>News</motion.a>
                         <motion.a href="#" className="text-white hover:text-gray-300" variants={menuItemVariants}>Contact</motion.a>
                     </motion.div>
@@ -131,7 +132,7 @@ const Navbar = () => {
                 <AnimatePresence>
                     {isOpen && (
                         <motion.div
-                            className="md:hidden py-4 flex flex-col space-y-4 text-center"
+                            className="md:hidden py-4 flex flex-col space-y-4 text-center bg-[#0b0c46] rounded-lg"
                             // Apply variants for mobile menu open/close
                             variants={mobileMenuVariants}
                             initial="hidden"
@@ -140,7 +141,7 @@ const Navbar = () => {
                         >
                             <motion.a href="/" className="text-white hover:text-gray-300" variants={menuItemVariants}>Home</motion.a>
                             <motion.a href="#aboutus" className="text-white hover:text-gray-300" variants={menuItemVariants}>About</motion.a>
-                            <motion.a href="#" className="text-white hover:text-gray-300" variants={menuItemVariants}>Services</motion.a>
+                            <motion.a href="/#events" className="text-white hover:text-gray-300" variants={menuItemVariants}>Events</motion.a>
                             <motion.a href="#" className="text-white hover:text-gray-300" variants={menuItemVariants}>News</motion.a>
                             <motion.a href="#" className="text-white hover:text-gray-300" variants={menuItemVariants}>Contact</motion.a>
                         </motion.div>
